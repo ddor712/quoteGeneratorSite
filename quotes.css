@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    padding:0;
+    border:0;
+    box-sizing:border-box;
+    /* border:1px solid; */
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    margin:0;
+    width:100%;
+    height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:#eefcff;
+}
+
+/* #nav-bar{
+    border:0;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:10%;
+    align-self: start;
+    background-color: red;
+} */
+
+nav {
+    margin:0;
+    padding:0;
+    align-self: flex-start;
+    background-color: #333;
+    width:100%;
+}
+
+ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: 2 ;
+    margin: 0;
+    padding:0;
+}
+
+li {
+    display: inline; 
+    margin-right:40px;   
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+li a:hover {
+    background-color: #555;
+}
+
+main{
+    width:50%;
+    height:50%;
+
+    margin-bottom:110px;
+
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FFFDFA;
+    box-shadow: 15px 10px #0e1111;
+    border:2px solid;
+
+    text-align: center;
+    
+}
+
+
+.quote-title{
+    
+    font-size:32px;
+    padding:2.5%;
+}
+
+.quote{
+    min-height: 110px;
+    font-size: 28px;
+}
+
+.quote::before, .quote::after{
+    content:'"';
+}
+
+.author{
+    margin-right:10%;
+    text-align:end;
+}
+
+#buttons{
+    
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width:80%;
+}
+
+.button{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+    border-radius: 40px;
+    cursor:pointer;
+    color:#EEE;
+    width:150%;
+    height:50px;
+    background-color:#333;
+    text-decoration: none;
+}
+
+.heart{
+    /* align-self: center; */
+    margin-right:10px;
+    width:40px;
+    height:40px;
+}
+
+.button:hover{
+    background-color: #555;
+}
